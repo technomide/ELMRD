@@ -9,7 +9,7 @@ GLOBAL STYLE
 	box-sizing: border-box;
 }
 body{
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background: #fff;
 }
 /*
@@ -33,7 +33,7 @@ a{
 	color: #fff;
 }
 .text-blue-color{
-	color: #1168A1;
+	color: #1369A2;
 }
 .font-weight{
 	font-weight: normal;
@@ -89,11 +89,6 @@ HEADER Section
 */
 header{
 	width: 100%;
-	height: 80vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	background: url(image/beach-clouds-dawn-1370725.jpg);
 	background-size: cover;
 }
@@ -102,31 +97,44 @@ header a{
 	display: inline-block;
 	font-size: 35px;
 }
-.container1{
-	width: 900px;
-	height: 85%;
-	max-height: 600px;
+.container-header{
+	max-width: 900px;
+	margin: auto;
+}
+.main-header-contant{
+	height: 700px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 90px;
 }
 nav{
 	width: 100%;
-	height: 90px;
+	height: 180px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	text-align: center;
 	justify-content: space-between;
+	align-items: center;
+}
+nav > :nth-child(1) i{
+	font-size: 25px;
+	transition: 0.4s linear;
+}
+nav > :nth-child(1) i:hover{
+	transform: scale(1.2);
+}
+nav > :nth-child(3) i{
+	font-size: 25px;
+	transition: 0.4s linear;
+}
+nav > :nth-child(3) i:hover{
+	transform: scale(1.2);
 }
 nav > :nth-child(2) img{
 	width: 75px;
 }
 .Child2{
 	width: 70%;
-	height: 250px;
+	height: 350px;
 	display: flex;
 	align-self: flex-end;
 	justify-content: space-between;
@@ -135,28 +143,33 @@ nav > :nth-child(2) img{
 	display: flex;
 	align-items: flex-end;
 }
+.Child2 > :nth-child(1) i{
+	font-size: 30px;
+}
 .Child2 > :nth-child(1) img{
 	width: 35px;
+}
+.Child2 > :nth-child(2){
+	align-self: flex-end;
+	margin-bottom: 35px;
 }
 .Child2 > :nth-child(2) ul{
 	list-style: none;
 	background: #fff;
-	border-radius: 17px;
-	height: 170px;
-	width: 30px;
-	margin-top: 47px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	border-radius: 20px;
 }
 .Child2 > :nth-child(2) ul li{
-	margin: 15px 0px 18px 0px;
-	height: 20px;
+	margin: 15px 0px 15px 0px;
 }
-.Child2 > :nth-child(2) ul li a img{
-	width: 20px;
-	display: block;
+.Child2 > :nth-child(2) ul li a i{
+	font-size: 23px;
+	transition: 0.2s linear;
+}
+.Child2 > :nth-child(2) ul li a i:hover{
+	transform: scale(1.2);
+}
+.Child2 > :nth-child(2) ul li a{
+	padding: 8px 8px;
 }
 /*
 =============================
@@ -165,9 +178,6 @@ DESCRIPTION
 */
 #Desciption{
 	width: 100%;
-	height: 90vh;
-	display: flex;
-	justify-content: center;
 }
 #Desciption .contant{
 	width: 700px;
@@ -198,7 +208,6 @@ THIRD SECTION
 #main-3{
 	width: 100%;
 	background: #fff;
-	/*min-height: 80vh;*/
 }
 .container3{
 	margin: auto;
@@ -221,7 +230,6 @@ THIRD SECTION
 	margin-top: 50px;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	justify-content: space-between;
 }
 .card{
@@ -231,14 +239,15 @@ THIRD SECTION
 	text-align: center;
 	flex-direction: column;
 	justify-content: center;
-	/*text-align: justify;*/
 	align-items: center;
 	padding: 0px 20px 0px 20px;
 }
-#Cards .card img{
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
+#Cards .card i{
+	transition: 0.2s linear;
+	color: black;
+}
+#Cards .card i:hover{
+	transform: scale(1.2);
 }
 /*
 =============================
@@ -247,21 +256,16 @@ FOURTH SECTION
 */
 #main-4{
 	width: 100%;
-	height: 90vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	background: url(image/priscilla-du-preez-Q7wGvnbuwj0-unsplash.jpg);
 	background-size: cover;
 }
 .gradient{
 	background-color: rgba(77, 140, 183,0.5);
-	height: 100%;
 	width: 100%;
 }
-.container2{
+.container4{
 	margin: auto;
-	height: 100%;
+	height: 800px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -269,7 +273,7 @@ FOURTH SECTION
 }
 .contant-main{
 	width: 100%;
-	height: 250px;
+	height: 230px;
 	background: #1369A2;
 	align-items: center;
 	display: flex;
@@ -279,13 +283,13 @@ FOURTH SECTION
 	width: 900px;
 }
 .contant-main .contant h1{
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 .contant-main .contant h2{
-	margin: 40px 0px 10px 0px;
+	margin-top: 30px;
 }
-.contant-main .contant h2:hover{
-	color: #444;
+.contant-main .contant a h2 i{
+	font-size: 20px;
 }
 /*
 =============================
@@ -295,14 +299,15 @@ FIFTH SECTION
 
 #main-5{
 	width: 100%;
-	height: 90vh;
+}
+.main-contant-5{
+	min-height: 750px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 }
 #Card{
-	/*height: 350px;*/
 	width: 900px;
 	display: flex;
 	flex-direction: row;
@@ -357,11 +362,17 @@ FIFTH SECTION
 	text-align: right;
 }
 .row{
-	/*height: 250px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	height: 300px;
+}
+.row > :nth-child(1){
+	height: 130px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	justify-content:center;
 	align-items: center;
 }
 .row input{
@@ -371,26 +382,27 @@ FIFTH SECTION
 	border-bottom: 2px solid black;
 	color: #808080;
 	width: 300px;
-	margin: 20px;
 }
-.row :focus {
-	transition: 0.5s;
-	border: 1px solid lightblue;
+.row :focus{
+	outline: none;
 }
-.row a {
+.row a{
 	background: #1168A1;
-	margin: 20px;
-	padding: 10px 25px 10px 25px;
+	padding: 12px 30px 12px 30px;
+	transition: 0.4s;
+	width: 163px;
+	font-size: 15px;
 }
 .row a:hover{
-	background: #444;
-	color: #fff;
+	background: #fff;
+	color: #1369A2;
 	border-radius: 20px;
+	border: 1.5px solid #1369A2;
+	transform: scale(1.1);
 }
-
 /*
 =============================
-SIXTH SECTION
+Videos SECTION
 =============================
 */
 #Videos-Section{
@@ -418,10 +430,12 @@ SIXTH SECTION
 	padding: 15px 55px 15px 55px;
 	background: var(--bg-play-icon);
 }
-.First-video .contant > :nth-child(1) img{
-	width: 35px;
-	height: 35px;
-	display: block;
+.First-video .contant > :nth-child(1) i{
+	transition: 0.2s linear;
+}
+.First-video .contant > :nth-child(1) i:hover{
+	transform: scale(1.2);
+	color: #1369A2;
 }
 .First-video .contant > :nth-child(2){
 	display: flex;
@@ -436,13 +450,21 @@ SIXTH SECTION
 .First-video .contant > :nth-child(2) > :nth-child(2) ul{
 	display: flex;
 	list-style: none;
+	background: #fff;
 }
 .First-video .contant > :nth-child(2) > :nth-child(2) ul li{
-	margin-right: 10px;
+	margin:8px 13px;
 }
-.First-video .contant > :nth-child(2) > :nth-child(2) img{
-	width: 20px;
-	display: block;
+.First-video .contant > :nth-child(2) > :nth-child(2) ul li a{
+ 	text-align: center;
+	display: flex;
+}
+.First-video .contant > :nth-child(2) > :nth-child(2) i{
+	transition: 0.5s linear;
+	font-size: 20px;
+}
+.First-video .contant > :nth-child(2) > :nth-child(2) i:hover{
+	transform: scale(1.2);
 }
 .Second-Third-video{
 	width: 1015px;
@@ -451,10 +473,13 @@ SIXTH SECTION
 	justify-content: space-between;
 	padding: 45px 105px;
 }
-.Second-Third-video img{
-	width: 30px;
-	height: 30px;
-	display: block;
+.Second-Third-video i{
+	font-size: 18px;
+	transition: 0.2s linear
+}
+.Second-Third-video i:hover{
+	transform: scale(1.2);
+	color: #1369A2;
 }
 .Second-Third-video .card1{
 	width: 335px;
@@ -496,7 +521,6 @@ footer{
 	background: #1369A2;
 }
 .row1{
-	width: 714px;
 	padding: 90px 0px; 
 	text-align: center;
 }
@@ -508,6 +532,7 @@ footer{
 	list-style: none;
 	margin-left: 160px;
 	padding-top: 45px;
+	height: 110px;
 }
 .row1 ul li{
 	margin: 20px;	
@@ -515,23 +540,28 @@ footer{
 .row1 ul li a{
 	padding: 10px 50px;
 	background: #fff;
+	transition: 0.3s linear;
 }
 .row1 ul li a:hover{
-	background: #018DB1;
+	background: #1369A2;
 	border-radius: 20px;
+	border: 1px solid #fff;
 	color: #fff;
+	transform: scale(1.2);
 }
 .row2{
-	width: 600px;
-	padding: 40px 30px;
+	min-height: 70px;
+	width: 552px;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
+.row2 h4{
+	line-height: 23px;
+}
 .row3{
-	width: 900px;
+	width: 100%;
 	padding: 75px 0px;
 	display: flex;
 	flex-wrap: wrap;
@@ -539,34 +569,33 @@ footer{
 	align-items: flex-end;	
 }
 .row3 .nav{
-	width: 650px;
-	height: 63px;
+	min-height: 63px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .row3 .nav ul{
 	display: flex;
 	list-style: none;
-	line-height: 36px;
 }
 .row3 .nav ul li{
 	margin-right: 75px;
-}
-.row3 .nav ul li a{
-	color: #fff;
 }
 .row3 .icons ul{
 	list-style: none;
 	background: #fff;
 	margin-bottom: 20px;
-}
-.row3 .icons ul li{
-	margin-bottom: 2px;
+	text-align: center;
 }
 .row3 .icons ul li a{
-	padding: 5px 3px;
+	padding: 8px 4px;
 }
-.row3 .icons ul li a img{
-	width: 15px;
-	display: block;
+.row3 .icons ul li a i{
+	font-size: 18px;
+	transition: 0.2s linear;
+}
+.row3 .icons ul li a i:hover{
+	transform: scale(1.2);
 }
 .row4{
 	text-align: center;

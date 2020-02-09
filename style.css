@@ -74,7 +74,7 @@ COMMON CONTAINER (DISCRIPTION)( 6 )( 5 )( footer )
 =====================================================
 */
 .container{
-	width: 900px;
+	max-width: 900px;
 	display: flex;
 	margin: auto;
 	flex-direction: column;
@@ -171,6 +171,70 @@ nav > :nth-child(2) img{
 .Child2 > :nth-child(2) ul li a{
 	padding: 8px 8px;
 }
+
+
+/* ------------------------------- */
+@keyframes example{
+	from{
+		width: 0%;
+	}
+	to {
+		width:90%;
+	}
+}
+
+.burger.menu{
+	font-size: 20px;
+	width: 90%;
+	background-color: #1369A2;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	display: none;
+	animation-name: example;
+	animation-duration: 1s;
+	top: 0px;
+	left: 0px; 
+	z-index: 10;
+}
+.burger.menu.active{
+	display: block;
+}
+.burger.menu li{
+	height: 90px;
+	width: 100%;
+	text-align: left;
+	color: #fff;
+	display: flex;
+ align-items: center;
+ cursor: pointer;
+
+}
+.burger.menu li:hover{
+	background-color: rgb(14, 77, 119);
+}
+.burger.menu li p {
+	width: 100%;
+	/* height: 100%; */
+	text-align: center;
+	cursor: pointer;
+	/* margin-left: 80px;; */
+}
+.burger.menu li p:hover{
+}
+.burger.menu .head{
+	height: 180px;
+	/* width: 180px; */
+}
+.burger.menu > :nth-child(1) > p{
+	/* width: 180px; */
+	/* margin-left: 90px; */
+}
+
+/* ---------------------------- */
+
+
 /*
 =============================
 DESCRIPTION
@@ -211,6 +275,7 @@ THIRD SECTION
 }
 .container3{
 	margin: auto;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -225,22 +290,21 @@ THIRD SECTION
 	clip-path: polygon(0% 0%, 0% 100%, 100% 80%, 100% 0%);
 }
 #Cards{
-	width: 940px;
-	height: 350px;
-	margin-top: 50px;
+	/* width: 900px; */
+	/* height: 350px; */
+	margin: 50px auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .card{
-	flex: 1;
-	height: 240px;
+	width: 31%;
+	/* height: 240px; */
 	display: flex;
 	text-align: center;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 0px 20px 0px 20px;
 }
 #Cards .card i{
 	transition: 0.2s linear;
@@ -341,7 +405,6 @@ FIFTH SECTION
 	align-items: center;
 }
 #Card{
-	width: 900px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -389,7 +452,6 @@ FIFTH SECTION
 	height: 330px;
 	width: 180px;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: right;
@@ -443,7 +505,6 @@ Videos SECTION
 }
 .First-video{
 	height: 450px;
-	width: 900px;
 	background: url(image/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg) no-repeat center /cover;
 	display: flex;
 	padding: 44px 76px;
@@ -500,11 +561,11 @@ Videos SECTION
 	transform: scale(1.2);
 }
 .Second-Third-video{
-	width: 1015px;
+	max-width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 45px 105px;
+	justify-content: space-evenly;
+	padding: 45px 0px 45px 0px;
 }
 .Second-Third-video i{
 	font-size: 18px;
@@ -515,7 +576,7 @@ Videos SECTION
 	color: #1369A2;
 }
 .Second-Third-video .card1{
-	width: 335px;
+	width: 35%;
 }
 .Second-Third-video .card1 > :nth-child(1){
 	background: url(image/clay-banks-LjqARJaJotc-unsplash.jpg) no-repeat center /cover;
@@ -530,7 +591,7 @@ Videos SECTION
 	background: var(--bg-play-icon);
 }
 .Second-Third-video .card2{
-	width: 435px;
+	width: 55%;
 }
 .Second-Third-video .card2 > :nth-child(1){
 	background: url('image/my-life-through-a-lens-bq31L0jQAjU-unsplash.jpg') no-repeat center /cover;

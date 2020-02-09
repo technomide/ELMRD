@@ -14,3 +14,13 @@ function ShowSlide(n){
  slides[n-1].style.display="block";
  dots[n-1].className="dot active";
 }
+
+
+function ActiveBurger(){
+  id=document.getElementById("Burger");
+  id.className = "burger menu active";
+}
+function DisableBurger(){
+  id=document.getElementById("Burger");
+  id.className = "burger menu";
+}
